@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Receipt</title>
+    <link rel="import" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap">
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        body{
+            font-family: 'Montserrat', sans-serif;
+            width:500px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .border{
+            border:3px solid #231F20;
+        }
+        .container{
+            /* padding-left: 15px; */
+            /* background-color:#E6E7E8; */
+        }
+        .header img{
+            width:270px;
+            height: 82px;
+            text-align: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .header .contact-info{
+            padding: 5px 15px;
+            background-color:#E6E7E8;
+            font-size:11px;
+        }
+        .header .contact-info .money-receipt{
+            background-color: #000;
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 10px;
+            font-weight: 600;
+            padding: 5px 0px;
+        }
+        .border .content-container{
+            padding: 0px 25px 0px 15px;
+            font-weight: 500;
+        }
+        .border .content-container .receipt-head{
+            display:flex;
+            justify-content: space-between;
+            font-size: 18px;
+            padding: 10px 0px;
+        }
+        .border .content-container .receipt-coontent p{
+            /* display:flex; */
+            padding: 8px 0px;
+        }
+        .border .content-container .receipt-authority{
+            text-align: right;
+        }
+        .border .content-container .receipt-authority P{
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="border">
+    <div class="container">
+        <div class="header">
+            <img src="logo.png" alt="Company Logo">
+            <div class="contact-info">
+                <p>BDBL Bhaban (3rd Floor-West), 12 Kawran Bazar, Dhaka-1215.</p>
+                <p>Fb:https://www.facebook.com/PencilBoxTraining | Cell:+88 01714 121719, +88 01635 540427</p>
+                <p>Email:info@pencilbox.edu.bd | Web:https://pencilbox.edu.bd</p>
+                <p class="money-receipt">Money Receipt</p>
+            </div>
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="receipt-head">
+            <p>SL.</p>
+            <p>DATE:.............................................</p>
+        </div> 
+        <div class="receipt-coontent">
+            <p>Recieved with thanks from .........................................................</p>
+            <p>Tk. .......................... &nbsp;(Taka.........................................................)</p>
+            <p>In cash/vide cheque/P.O/D.D No.................................................</p>
+            <p>Drawn on. ...................................................................................</p>
+            <p>Invoice No. .................................................................................</p>
+            <p>Subject to encashment...............................................................</p>
+        </div>
+        <div class="receipt-authority">
+            <p>For PencilBox</p>
+            <p>Authorized Signature</p>
+        </div>
+    </div>	
+    
+</div>
+
+
+
+</body>
+</html>

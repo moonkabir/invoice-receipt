@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money invoice</title>
+    <link rel="import" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap">
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        body{
+            font-family: 'Montserrat', sans-serif;
+            width:500px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+        
+        .border{
+            border:3px solid #fcb315;
+        }
+        .header img{
+            width:270px;
+            height: 82px;
+            text-align: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .header .contact-info{
+            padding: 5px 15px;
+            background-color:#E6E7E8;
+            font-size:11px;
+        }
+        .header .contact-info .money-invoice{
+            background-color: #fcb315;
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 10px;
+            font-weight: 600;
+            padding: 5px 0px;
+        }
+        .border .content-container{
+            padding: 0px 25px 0px 15px;
+            font-weight: 500;
+        }
+        .border .content-container .invoice-head{
+            font-size: 18px;
+            padding: 10px 0px;
+        }
+        .border .content-container .invoice-head .bold{
+            color:#fcb315;
+            font-weight: bold;
+        }
+        .border .content-container .invoice-coontent table{
+            border-collapse: collapse;
+            width: 100%;
+            padding: 8px 0px;
+        }
+        .border .content-container .invoice-coontent table td{
+            border: 1px solid #E6E7E8;
+            padding: 15px ;
+        }
+        .border .content-container .invoice-coontent table .table-head{
+            font-weight: bold;
+        }
+        .border .content-container .payment-options {
+            padding: 20px 0;
+            font-size: 12px;
+        }
+        .border .content-container .payment-options h5{
+            font-size:14px;
+            padding-bottom: 5px;
+        }
+        @media (min-width: 350px) and (max-width: 520px){
+            body{
+                width:350px;
+            }
+            .header img{
+                width: 200px;
+                height: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="border">
+    <div class="container">
+        <div class="header">
+            <img src="logo.png" alt="Company Logo">
+            <div class="contact-info">
+                <p>BDBL Bhaban (3rd Floor-West), 12 Kawran Bazar, Dhaka-1215.</p>
+                <p>Fb:https://www.facebook.com/PencilBoxTraining | Cell:+88 01714 121719, +88 01635 540427</p>
+                <p>Email:info@pencilbox.edu.bd | Web:https://pencilbox.edu.bd</p>
+                <p class="money-invoice">Invoice #00121</p>
+            </div>
+        </div>
+    </div>
+    <div class="content-container">
+        <div class="invoice-head">
+            <p class="bold">Bill To:</p>
+            <p>John Doe</p>
+            <p>18 Rojoniboslen</p>
+            <p>Mitford,Dhaka(city),Dhaka</p>
+            <p> <span class="bold"> Invoice Date:</span> January 10, 2021</p>
+        </div> 
+        <div class="invoice-coontent">
+            <table>
+                <tr class="table-head">
+                    <td>Description</td>
+                    <td>Amount</td>
+                </tr>
+                <tr>
+                    <td>Online Training on Mikrotik - Batch No : 5</td>
+                    <td>3000</td>
+                </tr>
+            </table>
+        </div>
+        <div class="payment-options">
+            <h5>Payment Options</h5>
+            <p>Bank Account:7102381318419, City Bank</p>
+            <p>PayPal email address:payment@zulkarcorp.com</p>
+        </div>
+    </div>	
+</div>
+</body>
+</html>
